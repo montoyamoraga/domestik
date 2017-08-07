@@ -14,6 +14,9 @@ este software corre en un macbook, con processing 3 instalado y la biblioteca de
 
  hasta 3 iphones pueden transmitir usando la app ipcamera
 
+ ![app](https://github.com/montoyamoraga/perfecto/raw/gh-pages/ipcamera.jpg "app ipcamera")
+
+
 en el sketch de processing hay que ingresar las ip de los iphone
 
 ## instrucciones
@@ -26,14 +29,14 @@ en el sketch de processing hay que ingresar las ip de los iphone
 * con las teclas 1, 2, 3 del macbook se puede activar o desactivar la muestra de cada iphone
 * se puede detener la transmisión con la tecla m
 * se puede reanudar la transmisión con la tecla n
-* si un iphone sale y vuelve a entrar de la app icamera, es necesario
+* si un iphone sale y vuelve a entrar de la app ipcamera, es necesario
 presionar "n" para reanudar, o "m" y "n" para resetear
 * no olvidar conectar el macbook al proyector
 
 ## agradecimientos
 
 * processing foundation, por su hermoso software
-* app icamera por ahorrarnos trabajo
+* app ipcamera por ahorrarnos trabajo
 * colo-colo, por existir
 
 
