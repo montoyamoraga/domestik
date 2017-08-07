@@ -12,12 +12,10 @@ v0.0.1
 
 este software corre en un macbook, con processing 3 instalado y la biblioteca de processing ipcapture instalada
 
- hasta 3 iphones pueden transmitir usando la app ipcamera
+ hasta 3 iphones transmitiendo video usando la app ipcamera
 
  ![app](https://github.com/montoyamoraga/perfecto/raw/gh-pages/ipcamera.png "app ipcamera")
 
-
-en el sketch de processing hay que ingresar las ip de los iphone
 
 ## instrucciones
 
