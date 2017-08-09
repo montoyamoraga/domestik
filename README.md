@@ -23,7 +23,7 @@ este software corre en un macbook, con processing 3 instalado y la biblioteca de
 
  ![app](https://github.com/montoyamoraga/perfecto/raw/gh-pages/pics/ipcamera.png "app ipcamera")
 
-* crear red local desde macbook, usar
+* crear red local desde macbook, escoger un buen nombre
 
 ![network](https://github.com/montoyamoraga/perfecto/raw/gh-pages/pics/network.png "create network")
 
