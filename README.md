@@ -47,7 +47,7 @@ este software corre en un macbook, con processing 3 instalado y la biblioteca de
 
 * abrir el sketch de processing en el macbook
 
-* reemplazar las ip del sketch por las de los iphones
+* reemplazar solo las ip del sketch por las de los iphones, no borrar ni el inicio "http://" ni el final "/live" del string
 
   ![p5](https://github.com/montoyamoraga/perfecto/raw/gh-pages/pics/ip_p5.png "p5")
 
