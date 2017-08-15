@@ -1,11 +1,12 @@
 //perfecto
 //by aaron montoya-moraga and guillermo montecinos
 //commisioned by maria jose contreras
-//v0.0.1
+//v0.0.2
 //august 2017
 
 //import libraries
 import ipcapture.*;
+import http.requests.*;
 
 //IPCapture cam2;
 //IPCapture cam3;
@@ -33,13 +34,15 @@ int minDim = 480;
 void setup() {
 
   //size of canvas
-  //size(320, 240);
-  fullScreen();
+  size(320, 240);
+  //fullScreen();
+  //for hiding the cursor
+  noCursor();
 
   //change ip address here
-  cams[0] = new IPCapture(this, "http://192.168.1.38/live", "", "");
-  cams[1] = new IPCapture(this, "http://192.168.1.42/live", "", "");
-  cams[2] = new IPCapture(this, "http://192.168.1.42/live", "", "");
+  cams[0] = new IPCapture(this, "http://192.168.1.57/live", "", "");
+  cams[1] = new IPCapture(this, "http://192.168.1.38/live", "", "");
+  cams[2] = new IPCapture(this, "http://192.168.1.38/live", "", "");
 
   //start cameras
   for (int i = 0; i < cams.length; i++) {
@@ -60,8 +63,6 @@ void draw() {
   howManyCameras();
 
   displayCameras();
-
-  //image(cam1, 0, 0);
 }
 
 void readCameras() {
@@ -116,6 +117,9 @@ void displayCameras() {
       }
     }
   }
+
+  //grayscale filter
+  filter(GRAY);
 }
 
 
