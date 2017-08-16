@@ -1,7 +1,7 @@
 //perfecto
 //by aaron montoya-moraga and guillermo montecinos
 //commisioned by maria jose contreras
-//v0.0.3
+//v0.0.5
 //august 2017
 
 //import libraries
@@ -127,7 +127,8 @@ void displayCameras() {
         {
           //one camera in landscape mode
           imageMode(CORNER);
-          image(cams[i], 0, 0, width, height);
+          //TODO FIX
+          image(cams[i], width/3, 0, width/3, height);
           //println("landscape");
         } else {
           //one camera in portrait mode
@@ -146,7 +147,8 @@ void displayCameras() {
         {
           //landscape mode
           imageMode(CORNER);
-          image(cams[i], positioned*width/3, 0, width/3, height);
+          //TODO FIX
+          image(cams[i], 2*positioned*width/3, 0, width/3, height);
           positioned++;
         } else {
           //portrait mode
@@ -160,13 +162,21 @@ void displayCameras() {
     int positioned = 0;
     for (int i = 0; i < cams.length; i++) {
       if (showCam[i] == true) {
-        imageMode(CORNER);
-        image(cams[i], positioned*width/3, 0, width/3, height);
-        positioned++;
+        if (isLandscape[i] == true) 
+        {
+          imageMode(CORNER);
+          //TODO FIX
+          image(cams[i], positioned*width/3, 0, width/3, height);
+          positioned++;
+        }
+        if (isLandscape[i] == false) {
+          imageMode(CORNER);
+          image(cams[i], positioned*width/3, 0, width/3, height);
+          positioned++;
+        }
       }
     }
   }
-
   //grayscale filter
   filter(GRAY);
 }
