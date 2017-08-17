@@ -1,7 +1,7 @@
 //perfecto
 //by aaron montoya-moraga and guillermo montecinos
 //commisioned by maria jose contreras
-//v0.0.6
+//v0.0.7
 //august 2017
 
 //import libraries
@@ -211,9 +211,16 @@ void keyPressed() {
     showCam[2] = !showCam[2];
   }
   
+  //turn off all cameras
   if (key == '0') {
     for (int i =0; i < showCam.length; i++) {
       showCam[i] = false;
-    }    
+    }
   }
+  
+  //quit program if enter/return is pressed
+  if (keyCode == ENTER || keyCode == RETURN) {
+    exit();
+  }
+  
 }
