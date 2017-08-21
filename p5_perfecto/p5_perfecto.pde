@@ -1,12 +1,11 @@
 //perfecto
 //by aaron montoya-moraga and guillermo montecinos
 //commisioned by maria jose contreras
-//v0.0.7
+//v0.0.8
 //august 2017
 
 //import libraries
 import ipcapture.*;
-import http.requests.*;
 
 //IPCapture cam2;
 //IPCapture cam3;
