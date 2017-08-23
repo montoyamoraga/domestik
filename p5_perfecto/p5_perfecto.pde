@@ -1,7 +1,7 @@
 //perfecto
 //by aaron montoya-moraga and guillermo montecinos
 //commisioned by maria jose contreras
-//v0.0.8
+//v0.0.9
 //august 2017
 
 //import libraries
@@ -40,7 +40,8 @@ void setup() {
 
   //size of canvas
   //size(320, 240);
-  fullScreen();
+  size(800, 600);
+  //fullScreen();
   //for hiding the cursor
   noCursor();
 
@@ -130,8 +131,9 @@ void displayCameras() {
           //println("landscape");
         } else {
           //one camera in portrait mode
-          imageMode(CORNER);
-          image(cams[i], 0, 0, width/2, height);
+          imageMode(CENTER);
+          float factor = 1.775*height/cams[i].height;
+          image(cams[i], width/2, height/2, factor*cams[i].width, factor*cams[i].height);
           //println("portrait");
         }
       }
