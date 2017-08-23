@@ -1,7 +1,7 @@
 //perfecto
 //by aaron montoya-moraga and guillermo montecinos
 //commisioned by maria jose contreras
-//v0.0.9
+//v0.1.0
 //august 2017
 
 //import libraries
@@ -35,6 +35,9 @@ int landscapeHeight = 480;
 
 int portraitWidth = 480;
 int portraitHeight = 640;
+
+//boolean for toggling color or grayscale
+boolean isGray = true;
 
 void setup() {
 
@@ -176,8 +179,10 @@ void displayCameras() {
       }
     }
   }
-  //grayscale filter
-  filter(GRAY);
+  if (isGray == true) {
+    //grayscale filter
+    filter(GRAY);
+  }
 }
 
 
@@ -211,7 +216,7 @@ void keyPressed() {
   if (key == '3') {
     showCam[2] = !showCam[2];
   }
-  
+
   //turn off all cameras
   if (key == '0') {
     for (int i =0; i < showCam.length; i++) {
@@ -219,9 +224,13 @@ void keyPressed() {
     }
   }
   
+  //toggle color or grayscale
+  if (key == 'c') {
+    isGray = !isGray;
+  }
+
   //quit program if enter/return is pressed
   if (keyCode == ENTER || keyCode == RETURN) {
     exit();
   }
-  
 }
