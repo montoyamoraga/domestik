@@ -15,7 +15,9 @@ este software corre en un macbook, con processing 3 instalado y la biblioteca de
  hasta 3 iphones transmitiendo video usando la app ipcamera
 
 
+## press
 
+* [https://www.arteallimite.com/en/2017/08/domestik-una-performance-de-lo-humano-y-lo-perfecto/](https://www.arteallimite.com/en/2017/08/domestik-una-performance-de-lo-humano-y-lo-perfecto/)
 
 ## instrucciones
 
