@@ -1,74 +1,26 @@
-# perfecto
+# domestik
 
-## acerca de
+## About
 
-software programado y diseñado por aarón montoya-moraga y guillermo montecinos
+Software design and development by Aarón Montoya-Moraga and Guillermo Montecinos, for domestik performance directed by María José Contreras
 
-comisionado por maría josé contreras
+This software allows every performer on stage to livestream from their mobile phones to a computer, where the director can choose which camera (frontal/rear) to use on every phone, can apply effects (black and white filter) and can decide which feed is shown to the audience (1, 2 or 3 cameras at the same time.)
 
-v0.0.1
+## Technology
 
-## software y hardware
+This software runs on a Macbook pro with [Processing 3](https://processing.org/) and the library ipcapture.
 
-este software corre en un macbook, con processing 3 instalado y la biblioteca de processing ipcapture instalada
+It supports up to 3 iPhones transmitting at the same time, using the app Ipcamera.
 
- hasta 3 iphones transmitiendo video usando la app ipcamera
+## Press
 
+* [Domestik: A performance that speaks about human perfection](https://www.arteallimite.com/en/2017/08/domestik-una-performance-de-lo-humano-y-lo-perfecto/), Arte al límite
 
-## press
-
-* [https://www.arteallimite.com/en/2017/08/domestik-una-performance-de-lo-humano-y-lo-perfecto/](https://www.arteallimite.com/en/2017/08/domestik-una-performance-de-lo-humano-y-lo-perfecto/)
-
-## instrucciones
-
-* descargar y abrir ipcamera en cada iphone
-
- ![app](https://github.com/montoyamoraga/perfecto/raw/gh-pages/pics/ipcamera.png "app ipcamera")
-
-* crear red local desde macbook, escoger un buen nombre
-
-![network](https://github.com/montoyamoraga/perfecto/raw/gh-pages/pics/network.png "create network")
-
-![name](https://github.com/montoyamoraga/perfecto/raw/gh-pages/pics/name.png "network name")
-
-* conectar cada iphone a la red creada
-
-![iphone](https://github.com/montoyamoraga/perfecto/raw/gh-pages/pics/iphone.png "iphone")
-
-* tomar nota de la ip de cada iphone, desde la app ipcamera
-
-![ip_iphone](https://github.com/montoyamoraga/perfecto/raw/gh-pages/pics/ip_iphone.png "ip_iphone")
-
-* tomar nota de la ip del macbook, ingresando a wifi, preferencias de red
-
-![name](https://github.com/montoyamoraga/perfecto/raw/gh-pages/pics/preferences.png "preferences")
-
-![ip_macbook](https://github.com/montoyamoraga/perfecto/raw/gh-pages/pics/ip_macbook.png "ip_macbook")
-
-* confirmar que iphones y macbook estén en la misma red, las ip son cuatro números entre 0 y 255, si los dos primeros números son iguales en todos los dispositivos, todo está bien, si no, confirmar que estén todos en la misma red
-
-* abrir el sketch de processing en el macbook
-
-* reemplazar solo las ip del sketch por las de los iphones, no borrar ni el inicio "http://" ni el final "/live" del string
-
-  ![p5](https://github.com/montoyamoraga/perfecto/raw/gh-pages/pics/ip_p5.png "p5")
-
-* ejecutar el sketch de processing
-* con las teclas 1, 2, 3 del macbook se puede activar o desactivar la muestra de cada iphone
-* se puede detener la transmisión con la tecla m
-* se puede reanudar la transmisión con la tecla n
-* si un iphone sale y vuelve a entrar de la app ipcamera, es necesario
-presionar "n" para reanudar, o "m" y "n" para resetear
-* no olvidar conectar el macbook al proyector
-* si se monta todo de nuevo, usar un nuevo nombre de red local y repetir todos los pasos
-
-## agradecimientos
-
-* processing foundation, por su hermoso software
-* app ipcamera por ahorrarnos trabajo
-* colo-colo, por existir
+* [Interview to María José Contreras, Friday August 25th 2017](https://www.youtube.com/watch?v=YbvMs64FjJo&t=1s), Radio La Clave
 
 
-## por hacer
+## Thanks
 
-en ios11, todavía no lanzado habrá soporte para webrtc y la aplicación migrará a correr en safari tanto en el macbook como en los iphone
+* Processing Foundation, for their beautiful software
+* Ipcamera app, for their cool app
+* Colo-Colo, for existing
