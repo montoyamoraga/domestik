@@ -21,16 +21,13 @@ It supports up to 3 iPhones transmitting at the same time, using the app Ipcamer
 ## Documentation
 
 ![](https://github.com/montoyamoraga/domestik/blob/gh-pages/pics/documentation/domestik1.jpg)
-*Picture by Claudia Montecinos*
 
 ![](https://github.com/montoyamoraga/domestik/blob/gh-pages/pics/documentation/domestik2.jpg)
-*Picture by Claudia Montecinos*
 
 ![](https://github.com/montoyamoraga/domestik/blob/gh-pages/pics/documentation/domestik3.jpg)
-*Picture by Claudia Montecinos*
 
 ![](https://github.com/montoyamoraga/domestik/blob/gh-pages/pics/documentation/domestik4.jpg)
-*Picture by Claudia Montecinos*
+*Pictures by Claudia Montecinos*
 
 ## Thanks
 
